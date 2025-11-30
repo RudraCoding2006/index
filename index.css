@@ -1,0 +1,209 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #e0f7fa);
+    color: #222;
+}
+
+/* Top bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    background: #1e3a8a;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topbar .logo {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.topbar .top-text {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Main container */
+.container {
+    max-width: 1000px;
+    margin: 30px auto 40px;
+    padding: 0 16px;
+}
+
+/* Form card */
+.form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 24px 30px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    border: 1px solid #e5e7eb;
+}
+
+/* Titles */
+.form-card h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #111827;
+    border-left: 3px solid #2563eb;
+    padding-left: 8px;
+}
+
+/* Form layout */
+form {
+    margin-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 230px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+/* Inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    background-color: #f9fafb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.18);
+    background-color: #ffffff;
+}
+
+/* Hint text under inputs */
+.hint {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox group */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.5);
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.btn-secondary:hover {
+    background-color: #d1d5db;
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 11px;
+    color: #6b7280;
+    padding: 8px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        padding: 10px 16px;
+    }
+
+    .form-card {
+        padding: 18px 14px 24px;
+    }
+}
