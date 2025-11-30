@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Scholarship Application Form</title>
+    <link rel="stylesheet" href="index.css"> <!-- CSS yaha link kari che -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <header class="topbar">
+        <div class="logo">🎓 Scholarship Portal</div>
+        <div class="top-text">Student Support & Guidance</div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <section class="form-card">
+            <h1>National Scholarship Application Form</h1>
+            <p class="subtitle">
+                Please fill the form carefully. Use correct format for each field.
+            </p>
+
+            <form>
+                <!-- PERSONAL DETAILS -->
+                <h2 class="section-title">Personal Details</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student_name">Student Name</label>
+                        <input type="text" id="student_name" name="student_name" placeholder="Enter your full name">
+                        <small class="hint">Example: Rajesh Rameshbhai Patel</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="father_name">Father's Name</label>
+                        <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name">
+                        <small class="hint">Example: Rameshbhai Patel</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mother_name">Mother's Name</label>
+                        <input type="text" id="mother_name" name="mother_name" placeholder="Enter your mother's name">
+                        <small class="hint">Example: Meenaben Patel</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+                        <small class="hint">Example: 05/11/2006</small>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="">Select Category</option>
+                            <option value="GEN">General</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aadhar_number">Aadhaar Number</label>
+                        <input type="text" id="aadhar_number" name="aadhar" maxlength="12" placeholder="12 digit Aadhaar number">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Residential Address</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Village, Taluka, District, Pincode"></textarea>
+                </div>
+
+                <!-- ACADEMIC DETAILS -->
+                <h2 class="section-title">Academic Details</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="college_name">College Name</label>
+                        <input type="text" id="college_name" name="college_name" placeholder="Enter your college name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course_name">Course / Programme</label>
+                        <input type="text" id="course_name" name="course_name" placeholder="e.g. BSc IT">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="current_semester">Current Semester</label>
+                        <select id="current_semester" name="current_semester">
+                            <option value="">Select Semester</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last_percent">Last Exam Percentage</label>
+                        <input type="number" id="last_percent" name="last_percent" step="0.01" placeholder="e.g. 78.45">
+                    </div>
+                </div>
+
+                <!-- CONTACT DETAILS -->
+                <h2 class="section-title">Contact Details</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mobile_number">Mobile Number</label>
+                        <input type="text" id="mobile_number" name="mobile" maxlength="10" placeholder="Enter your active mobile number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_id">Email ID</label>
+                        <input type="email" id="email_id" name="email" placeholder="Enter your email address">
+                    </div>
+                </div>
+
+                <!-- BANK DETAILS -->
+                <h2 class="section-title">Bank Details</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="account_number">Bank Account Number</label>
+                        <input type="text" id="account_number" name="account_number" placeholder="Enter your account number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ifsc_code">IFSC Code</label>
+                        <input type="text" id="ifsc_code" name="ifsc" placeholder="e.g. SBIN0001234">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="bank_name">Bank Name & Branch</label>
+                    <input type="text" id="bank_name" name="bank_name" placeholder="e.g. SBI, Unjha Branch">
+                </div>
+
+                <!-- DECLARATION -->
+                <h2 class="section-title">Declaration</h2>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="declaration" name="declaration">
+                    <label for="declaration">
+                        I hereby declare that all the information provided above is true to the best of my knowledge.
+                    </label>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="form-actions">
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>Demo Scholarship Portal • For Project Use Only</span>
+    </footer>
+
+    <script src="1.js"></script>
+</body>
+</html>
